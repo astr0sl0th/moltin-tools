@@ -1,0 +1,15 @@
+{
+  "name": "moltin-tools",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Joe Hill",
+  "license": "MIT",
+  "dependencies": {
+    "@moltin/request": "^1.4.4",
+    "@moltin/sdk": "^3.19.0",
+    "config": "^3.0.1",
+    "js-yaml": "^3.12.2",
+    "json-2-csv": "^3.4.1",
+    "yargs": "^13.2.2"
+  }
+}
