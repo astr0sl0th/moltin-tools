@@ -1,6 +1,6 @@
 const Moltin = require('../../client/moltin-client');
 
-const createProduct = async products => {
+const createProduct = products => {
   products.forEach(async product => {
     try {
       const createdProduct = await Moltin().post('products', {
