@@ -1,5 +1,5 @@
-const createProduct = require('./createProduct');
-const updateProduct = require('./createProduct');
+const createProduct = require('./createProduct/createProduct');
+const updateProduct = require('./updateProduct');
 const deleteProduct = require('./deleteProduct')
 
 module.exports = {
