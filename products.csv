@@ -1,3 +1,2 @@
-﻿name,description,sku,slug,status,price
-Deck Shoe,"Modern boat shoes were invented in 1935 by American Paul A. Sperry of New Haven, Connecticut after noticing his dog's ability to run easily over ice without slipping. Using a knife, he cut siping into his shoes' soles, inspiring a shoe perfect for boating and a company called Sperry Top-Sider.",deck-shoe-001,deck-shoe,live,2400
-Deck Shoe,"Modern boat shoes were invented in 1935 by American Paul A. Sperry of New Haven, Connecticut after noticing his dog's ability to run easily over ice without slipping. Using a knife, he cut siping into his shoes' soles, inspiring a shoe perfect for boating and a company called Sperry Top-Sider.",deck-shoe-001,deck-shoe,live,2400
+name,description,brand,price,slug,manage_stock,sku,images,formatFix
+test product,this is just a test product,test,199,test-product,FALSE,clitestproduct,,

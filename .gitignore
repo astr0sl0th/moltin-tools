@@ -1,3 +1,4 @@
 node_modules
 config/default.yml
 localStorage
+~$products.xlsx
