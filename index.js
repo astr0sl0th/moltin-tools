@@ -30,8 +30,9 @@ const {
 } = require('./methods/index');
 const getProducts = require('./client/csv-client');
 
-async () => {
+(async () => {
   const products = await getProducts();
+  console.log(products)
   switch (true) {
     case argv.c:
       createProduct(products);
@@ -46,4 +47,6 @@ async () => {
     default:
       break;
   }
-};
+})().catch(err => {
+  console.error(err);
+});
