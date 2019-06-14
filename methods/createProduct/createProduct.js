@@ -1,15 +1,18 @@
+const chalk = require('chalk')
 const Moltin = require('../../client/moltin-client');
+const convertToBool = require('../../util/stringToBool')
 
 const createProduct = products => {
-  products.forEach(async product => {
+  console.log('Creating products....');
+  return products.forEach(async product => {
     try {
       const createdProduct = await Moltin().post('products', {
         type: 'product',
-        name: process.name,
+        name: product.name,
         slug: product.slug,
         sku: product.sku,
         description: product.description,
-        manage_stock: false,
+        manage_stock: convertToBool(product.manage_stock),
         price: [
           {
             amount: product.price,
@@ -20,7 +23,7 @@ const createProduct = products => {
         status: 'live',
         commodity_type: 'physical'
       });
-      console.log(`New product created: ${createdProduct}`);
+      console.log(`New product created: ${chalk.green(createdProduct.data.name)}`);
     } catch (error) {
       console.error(error);
     }
