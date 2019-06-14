@@ -27,4 +27,6 @@ Options:
 
 ## Todos:
 
+- Update product(s)
+- Delete product(s)
 - Allow JSON array as a source of input
